@@ -10,7 +10,7 @@
         $userID = $_SESSION['useID'];
         $spotID = $_GET['book'];
 
-        $insert = "INSERT INTO `booking`(`userID`, `spotID`, `vNo`, `tele`, `date`, `time`) VALUES ('$userID','$spotID','$vNumber','$tele','$date','$time')";
+        $insert = "INSERT INTO `booking1`(`userID`, `spotID`, `vNo`, `tele`, `date`, `time`) VALUES ('$userID','$spotID','$vNumber','$tele','$date','$time')";
 
         $result = mysqli_query($conn, $insert);
 

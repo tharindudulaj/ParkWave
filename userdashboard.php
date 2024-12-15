@@ -5,7 +5,7 @@ include "dbh.inc.php";
 
 $userID = $_SESSION['useID'];
 
-$select = "SELECT * FROM `booking` WHERE `userID`=$userID";
+$select = "SELECT * FROM `booking1` WHERE `userID`=$userID";
 
 $result = mysqli_query($conn, $select);
 
