@@ -1,0 +1,434 @@
+:root{
+    --main-background-color: #27292a;
+    --yellow-color: #FDC500;
+    --white-color: #fff;
+    --light-yellow: #fee799;
+    --second-yellow: #F9BE00;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(248,248,248);
+}
+#bg-img{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--white-color);
+    background-image: url(../assets/backgroundmain.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    background-attachment: fixed;
+}
+.container{
+    width: 95%;
+    margin: auto;
+}
+
+/* CSS for navigation bar */
+.nav_header-menu{
+    width: 100%;
+    margin: auto;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background-color: rgba(39, 41, 42, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+      
+}
+.nav_logo img{
+    width: 180px;
+    padding: 10px;
+}
+.nav_navbar ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.nav_navbar ul li{
+    padding: 10px;
+}
+.nav_navbar ul li a{
+    font-size: 23px;
+    color: var(--white-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav_navbar ul li a:hover{
+    color: var(--yellow-color);
+}
+#nav_signupbtn a{
+    font-size: 20px;
+    border: 1px solid var(--yellow-color);
+    padding: 4px;
+    border-radius: 10px;
+}
+#nav_signupbtn a:hover{
+    background-color: var(--yellow-color);
+    color: var(--white-color);
+}
+
+/* CSS for hero section */
+.hero-section{
+    width: 63%;
+    padding: 25px;
+    margin-left: 50px;
+    margin-top: 0;
+    padding-top: 150px;
+    margin-bottom: 130px;
+}
+.hero-section h1{
+    color: var(--white-color);
+    font-size: 50px;
+}
+.hero-section h1 span{
+    color: var(--yellow-color);
+}
+.single-set{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.single-set img{
+    width: 23px;
+}
+.single-set p{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--white-color);
+    font-family: sans-serif;
+}
+.hero-icons{
+    display: flex;
+    gap: 29px;
+    margin-top: 25px;
+    width: 80%;
+    background-color: rgba(39, 41, 42, .5);
+    padding: 0 10px;
+    border-radius: 10px;
+}
+.hero-text{
+    margin-top: 75px;
+}
+.hero-text p{
+    color: var(--white-color);
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+.hero-text p::first-letter{
+    font-size: 40px;
+}
+.regbtn{
+    text-decoration: none;
+    background: var(--yellow-color);
+    color: var(--main-background-color);
+    padding: 10px 50px;
+    font-size: 25px;
+    font-weight: 600;
+    border: 2px solid var(--light-yellow);
+    border-radius: 7px;
+    font-family: sans-serif; 
+    box-shadow: 0px 0px 10px 0px #2D2D2D;
+    display: inline-block;
+}
+.regbtn:hover{
+    background-color: var(--second-yellow);
+}
+.regbtn:active{
+    transform: scale(0.95);
+}
+
+/* CSS for popular city section */
+.location-section{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.location-set{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+.location-set img{
+    width: 250px;
+    box-shadow: 10px 10px 10px -3px rgba(0,0,0,0.42);
+    border: 4px solid #27292a;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.location-set img:hover{
+    transform: scale(1.1);
+}
+.location-set a{
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid var(--main-background-color);
+    border-radius: 0 20px;
+    cursor: pointer;
+    transition: border-radius 0.5s linear;
+}
+.location-set a:hover{
+    border-radius: 0;
+}
+.location-set p{
+    color: var(--main-background-color);
+    font-size: 30px;
+    font-weight: 500;
+}
+.bookbtn{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    background-color: var(--yellow-color);
+    color: #27292a;
+    border-radius: 7px;
+    padding: 10px;
+    border: 2px solid #27292a;
+    box-shadow: 0px 0px 10px 0px #2D2D2D;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.bookbtn:hover{
+    background-color: var(--second-yellow);
+}
+.bookbtn:active{
+    transform: scale(0.95);
+    box-shadow: none;
+}
+.bookbtn a{
+    color: var(--main-background-color);
+    text-decoration: none;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+/* CSS for Photo Gallery */
+.gallery{
+    width: 600px;
+    display: flex;
+    margin: 20px;
+    overflow-x: scroll;
+}
+.gallery div{
+    width: 100%;
+}
+.gallery div img{
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+    border: 2px solid var(--yellow-color);
+}
+.gallery div img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+.gallery-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+#backbtn, #nextbtn{
+    width: 80px;
+    margin: 5px;
+}
+
+/* CSS for Search bar */
+.search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 400px;
+    background-color: #fef3cc;
+    padding: 5px 10px;
+    border: 2px solid var(--main-background-color);
+    border-radius: 30px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+}
+.search-icon img{
+    width: 20px;
+}
+.search-text{
+    width: 300px;
+    padding: 5px 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.search-text::placeholder{
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+/* CSS for section topic */
+.section-topic{
+    width: 500px;
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+.section-topic h2{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 750;
+    color: #27292a;
+}
+.section-topic h2 span{
+    color: var(--yellow-color);
+    font-size: 70px;
+}
+
+/* CSS for horizontal line */
+.h-line{
+    width: 90%;
+    margin: auto;
+    height: 4px;
+    background-color: var(--main-background-color);
+    opacity: 0.3;
+}
+
+/* CSS for Promotion Section */
+.promo-section{
+    width: 100%;
+    height: 500px;
+    background-color: #2c3433;
+    margin-top: 50px;
+}
+.promo-1{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+.promo-1 img{
+    width: 50%;
+}
+.promo1-text h2{
+    color: var(--white-color);
+    font-family: sans-serif;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+.promo1-text p{
+    color: var(--white-color);
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.promo1-text p span{
+    color: var(--yellow-color);
+}
+.promo1-text img{
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* CSS for footer */
+.footer{
+    width: 100%;
+    height: 350px;
+    background-color: var(--main-background-color);
+    padding: 30px 40px 0 30px;
+}
+.footer-section1{
+    width: 90%;
+    margin: 40px 60px;
+    display: flex;
+    gap: 70px;
+}
+.footer-logo{
+    width: 15%;
+    margin-top: 30px;
+}
+.footer-logo img{
+    width: 200px;
+    height: auto;
+}
+.footer-text{
+    width: 50%;
+    display: flex;
+    gap: 10px;
+}
+.footer-text div{
+    width: 500px;
+    text-align: center;
+}
+.footer-text div p{
+    width: 200px;
+    margin-bottom: 20px;
+    color: var(--white-color);
+    font-family: sans-serif;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.footer-text div ul{
+    list-style: none;
+}
+.footer-text div ul li{
+    padding: 7px 0;
+}
+.footer-text div ul li a{
+    color: var(--white-color);
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.footer-text div ul li a:hover{
+    text-decoration: underline;
+    color: var(--yellow-color);
+}
+.footer-icons{
+    width: 30%;
+    margin-left: 40px;
+}
+.footer-icons p{
+    margin-bottom: 20px;
+    color: var(--white-color);
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.footer-icon{
+    width: 30%;
+    display: flex;
+    gap: 10px;
+}
+.footer-icons img{
+    width: 50px;
+    height: 50px;
+    display: flex;
+}
+.footer-icons img:hover{
+    transform: scale(1.1);
+}
+.footer-section2{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.footer-section2 p{
+    color: var(--white-color);
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+

@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(248,248,248);
+}
+.container{
+    width: 100%;
+}
+.form-box{
+    width: 40%;
+    margin: auto;
+    margin-top: 70px;
+    height: 420px; 
+    border-radius: 10px;
+    box-shadow: 0px 6px 9px -1px rgba(0,0,0,0.75);
+    margin-bottom: 70px;
+}
+.form-head{
+    width: 100%;
+    height: 70px;
+    background-color: #27292a;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-topic{
+    text-align: center;
+}
+.form-topic p{
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 550;
+    letter-spacing: 1px;
+}
+.form-content{
+    width: 100%;
+}
+.form-input{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+.input-section{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.input-section p{
+    width: 20%;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.input-section input{
+    width: 80%;
+    height: 35px;
+    background-color: #E6E6E6;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 0 10px;
+}
+.two-input{
+    width: 80%;
+    display: flex;
+    gap: 10px;
+}
+.input-section-second{
+    margin-bottom: 25px;
+}
+.input-section-second p{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.input-selection select{
+    margin-left: 50px;
+    width: 100px;
+}
+.input-selection select:focus{
+    outline: none;
+}
+label{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 520;
+}
+.checkbox-sec{
+    margin-left: 50px;
+    display: flex;
+    gap: 10px;
+}
+.checkbox-section{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.btn{
+    margin-top: 70px;
+}
+.btn a{
+    padding: 8px 25px;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 550;
+    background-color: #28A745;
+    /* border: 2px solid #27292a; */
+    border-radius: 8px;
+    display: inline-block;
+}
+.btn a:active{
+    transform: scale(0.95);
+}
+.img-upload{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+.img-upload p{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+.img-upload input{
+    margin-left: 50px;
+}
+
+

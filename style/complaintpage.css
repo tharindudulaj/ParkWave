@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: rgb(248,248,248);
+}
+.container{
+    width: 80%;
+    margin: auto;
+    /* border: 2px solid black; */
+    margin-top: 120px;
+    box-shadow: 0px 4px 13px -4px rgba(0,0,0,0.75);
+    padding: 20px 0;
+    border-radius: 3px;
+}
+.lists-box{
+    width: 90%;
+    margin: auto;
+    border: 2px solid black;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+.list-box{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.comp-details{
+    width: 40%;
+    height: 150px;
+    border: 3px solid #fff;
+    box-shadow: 0px 3px 12px 0px rgba(0,0,0,0.75);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F4F4;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+.comp-details:hover{
+    transform: scale(1.1);
+}
+.comp-details p {
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+}
+span{
+    color: #FDC500;
+    font-size: 30px;
+}
+.list-details{
+    width: 40%;
+}
+.item-text{
+    width: 100%;
+    display: flex;
+    margin: 30px 0;
+    gap: 10px;
+}
+.item-text p{
+    font-size: 25px;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.list-btn{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+.dlt-bt{
+    margin-top: 10px;
+    background-color: #DC3545;
+    padding: 13px 15px;
+    border-radius: 7px;
+    display: inline-block;
+    height: 40px;
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.updt-btn{
+    margin-top: 10px;
+    padding: 13px 15px;
+    border-radius: 7px;
+    background-color: #6C757D;
+    display: inline-block;
+    height: 40px;
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+a:active{
+    transform: scale(0.95);
+}
+.price{
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 500;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.price:hover{
+    text-decoration: underline #DC3545;
+}
